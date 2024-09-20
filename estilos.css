@@ -1,0 +1,541 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* HEADER */
+.contenedor-header {
+    width: 100%;
+    background-color: #1f1f1f;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    opacity: 0.8;
+}
+
+header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.white {
+    color: #fff;
+}
+
+.txtRojo {
+    color: #ff0000;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.redes a:hover {
+    color: #ff0000;
+}
+
+/* MENU RESPONSIVO */
+.nav-responsive {
+    display: none;
+}
+
+.nav-responsive i {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Inicio {
+    height: 80vh;
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-seccion {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 2rem;
+}
+
+.info h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: 1.2rem;
+}
+
+.btn-mas {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-mas:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.opcion {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.opcion:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* SECCION NOSOTROS */
+.nosotros {
+    padding: 5rem 0;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col {
+    width: 45%;
+}
+
+.col img {
+    width: 100%;
+}
+
+.contenedor-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.numero {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.info {
+    margin-bottom: 1rem;
+}
+
+.info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.info span {
+    font-size: 1.2rem;
+    color: #ff0000;
+}
+
+.p-especial {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+hr {
+    width: 90%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    border: 1px solid #333;
+}
+
+.fila-nosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col1 {
+    width: 45%;
+    text-align: center;
+}
+
+.col2 {
+    width: 45%;
+}
+
+.col1 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.col1 span {
+    font-size: 1.2rem;
+    color: #ff0000;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* SECCION SERVICIOS */
+.servicios {
+    padding: 5rem 0;
+}
+
+.info-servicios {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 1rem;
+}
+
+td i {
+    font-size: 2rem;
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+td h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+td p {
+    font-size: 1rem;
+}
+
+/* SECCION COMODIDADES */
+.comodidades {
+    padding: 5rem 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+ul li span {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* SECCION GALERIA */
+.galeria {
+    padding: 5rem 0;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+/* SECCION EQUIPO */
+.equipo {
+    padding: 5rem 0;
+}
+
+.equipo .col {
+    text-align: center;
+    width: 30%;
+}
+
+.equipo img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.equipo .info {
+    margin-bottom: 2rem;
+}
+
+.equipo .info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.equipo .info p {
+    font-size: 1rem;
+}
+
+.equipo .info a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.equipo .info a:hover {
+    color: #ff0000;
+}
+
+/* SECCION CONTACTO */
+.contacto {
+    padding: 5rem 0;
+}
+
+.contacto input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+}
+
+.mensaje textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+.mensaje button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mensaje button:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fila-datos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.fila-datos .col {
+    text-align: center;
+}
+
+.fila-datos i {
+    font-size: 2rem;
+    color: #401ce0;
+    margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .info {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info p {
+    font-size: 1rem;
+}
+
+footer .info .redes {
+    display: flex;
+}
+
+footer .info .redes a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+footer .info .redes a:hover {
+    color: #5900ff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .fila {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .info-servicios {
+        flex-direction: column;
+    }
+
+    .fila-nosotros {
+        flex-direction: column;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    }
+
+    /*estudiante*/
+
+    .estudiante{
+        max-width :1100px;
+        margin: auto;
+        background-color: #f4f4f4;
+        padding: 100px 20px;
+    }
+
+    .estudiante-fila{
+        display: flex;
+        align-items: center;
+    }
+
+    .estudiante.col{
+        width: 50%;
+
+    }
+
+    .estudiante.img{
+        width: 50%;
+        border-radius: 10px;
+        margin-right: 20px;
+
+    }
+
+    .estudiante.numero{
+        color: #f13;
+        font-weight: bold;
+        font-size: 5rem;
+    }
+
+    .estudiante.info{
+        margin-left: 20px;
+
+    }
+    .estudiante.carnet{
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #1f283e;
+    }
